@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'kozak' );
 
 /** MySQL database username */
-define( 'DB_USER', 'admin' );
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '1111' );
+define( 'DB_PASSWORD', 'password' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -36,7 +36,7 @@ define( 'DB_CHARSET', 'utf8' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
-
+define("FS_METHOD", 'direct');
 /**
  * Authentication Unique Keys and Salts.
  *
@@ -46,15 +46,15 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',          'IwOs:B$74vV/zU5Ndj>*F<?*kyBr[{sO^hf5o8:bb2$65eq-YphYw^[Zhw)bGAl$' );
-define( 'SECURE_AUTH_KEY',   'MS8iLb32j1/{?!U,p|+PbM#A>.?t~<9/3S/+4M9`KdPX5o6dIbVCr+vR[-;{:W]f' );
-define( 'LOGGED_IN_KEY',     'LmQenw[zXYhKx.}r}mM<(J:[ATdrm)(&BB*efYBJ+-Zt+fp_va$Qp~08LH1+I)$T' );
-define( 'NONCE_KEY',         'x=1)IFza{]I={Z.k1}xqYk_u_E)0^~{:xL{@gL)WkP3#2*p$h;I8^Tw#l8AVfa}R' );
-define( 'AUTH_SALT',         'EK1p8r4AiPNOo{-K})A22j<bv>z2),[+cb1..%9yAY>m^ZCQM|3O^z>?l$FdE^Xb' );
-define( 'SECURE_AUTH_SALT',  '9@2x^p{Advm>mp{rt8Xe6c!LUh!r$j<hR!,H2]*aEOv_es=6D&pmu&U9oO*LNZ<U' );
-define( 'LOGGED_IN_SALT',    'UO FT:4%/m1oejGJ !afDkCW@EUzl?zWL>fe^m&yn5=[SkSv^5hEo-*1f2B4KuXB' );
-define( 'NONCE_SALT',        '[f`jHH}%Mp|1_2>aYaOoIZ9()!&{e,OizFHn[R;p`Ak#=208>dR_%,6GU%z[xtD$' );
-define( 'WP_CACHE_KEY_SALT', 'jc&MBHa_@DtDl5!U;^,J:s2W]B1U>DOy.c{6u.;3u+l#}3S9}9IHt{qTi@=mlz<7' );
+define( 'AUTH_KEY',          'RW|hS|erNWW+*m|$%l!=G&%,qExH+:OdS?`bU:gmf,uVT,W 1zaHmWE.d6 lyTp2' );
+define( 'SECURE_AUTH_KEY',   'U5)CPj>hq~;QBLkK}@D)>]h~7]W2k@]Rbuu_Y(u(=[1^2^s~v84uVwxJj1^!KOn+' );
+define( 'LOGGED_IN_KEY',     'MW6PDJOkjv^tK~4(E)oW?>6k.i=AJ~hCFI%T?R%`x&1^$lSBu|F}jpz!bIEPyqG;' );
+define( 'NONCE_KEY',         'DP8?7GDpYw6&07e1/Ee0av{F:4T3R.-TL)E^IeUNYNr$%kOe{s0hNeBQ22]Cacc*' );
+define( 'AUTH_SALT',         'T3wL3`H~_(+;X`5Tj;&KQqY9q^y~EzLk(rs;Ki?G7yNsJk2&wz$qd Kv=8-e8:d>' );
+define( 'SECURE_AUTH_SALT',  'a?r6,^V7C5de3`Ws}71_7+rB2i[JEjtI`$}x/ecN?kRfw,PD?)uUZA9].Exu7?_o' );
+define( 'LOGGED_IN_SALT',    'J%SVc46UjM}^LK$zq#myiw|kF9uhCzCL&pykMwBoT*N5cD./R(#,~@.(Cx6M*a*F' );
+define( 'NONCE_SALT',        '3`_%SfV}qahA5W +@Ig2V_YCbpHJ2B|J1$p.tejKCS~p~:z2:4|}~lAln[ 3qvOX' );
+define( 'WP_CACHE_KEY_SALT', 'DKe.9#0EH#RpHS|p]W3| S:^NhTEoiRE&`m@PV<lRR|E.M.*>8=ItN/lruyy&1R,' );
 
 /**
  * WordPress Database Table prefix.

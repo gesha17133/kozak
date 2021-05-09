@@ -54,7 +54,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.80857;
 }
-
+.row-fix.row{
+    margin: 0;
+}
+.container{
+    padding: 0;
+}
 body.demos .section {
     background: url(images/bg.png) repeat top center #f2f3f5;
 }
