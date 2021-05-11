@@ -6,13 +6,20 @@ require get_template_directory().'/functional_parts/specific-functions.php';
 /*
 * Theme supports 
 */
-add_theme_support( 'post-thumbnails', array( 'post', 'product', 'replies', 'services' ) );
 
 add_action( 'after_setup_theme', function(){
-	register_nav_menus( [
-		'header_menu' => 'Menu in header',
-		'footer_menu' => 'Мenu in footer'
-	] );
+
+    register_nav_menus( [
+		'header_menu_left'  => 'Menu in header Left',
+        'header_menu_right' => 'Menu in Header Right',
+		'footer_menu'       => 'Мenu in footer',
+    ] );
+
+
+    add_theme_support( 'post-thumbnails' );
+
+    add_theme_support( 'custom-logo');
+
 } );
 
 function kzk_enqueue_scripts(){
@@ -22,8 +29,8 @@ function kzk_enqueue_scripts(){
     */
     wp_enqueue_style( 'glide-core', get_template_directory_uri() . '/lib/glide/glide.core.min.css'  );
     wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css'  );
-    wp_enqueue_style('slick-css', 'cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array('jquery') );
-    wp_enqueue_script( 'slick-js', 'cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',array('jquery') );
+    wp_enqueue_style('slick-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css' );
+    wp_enqueue_script( 'slick-js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js',array('jquery') );
     /*  
     *  Custom JS ( ajax and default behavior for front-end part )
     */

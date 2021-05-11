@@ -11,9 +11,12 @@
     $testimonials_bg = get_field('testimonials_bg');
 ?>
 
-<section class="testimonials_section" style="background: url(<?php echo $header_bg['url'] ?>);" >
-
+<section class="site_branding_block" style="background-image: url(<?php echo $header_bg['url'] ?>);" >
+    <div class="logo_img_header_banner"> 
+        <?php the_custom_logo(); ?>
+    </div>
 </section>
+
 <section class="divider_section theme_section" >
     <div class='single-line'>
         <?php echo get_field('homepage-quote'); ?>

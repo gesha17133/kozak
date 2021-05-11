@@ -54,7 +54,7 @@
 
     </div>
     <div class="button_wrapper">
-    <a href="#" class="button_services">Всі послуги</a>
+    <a href="<?php get_field('services_button_url ') ?>" class="button_services"><?php get_field('sevices_button_text') ?></a>
     </div>
 
     <?php 

@@ -3,14 +3,14 @@
         <div class="footer-distributed">
             <div class="footer-left">
                 <p class="footer-links">
-                    <a href="#">Home</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">About</a>
-                    <a href="#">Faq</a>
-                    <a href="#">Contact</a>
+                    <?php 
+                        wp_nav_menu( [ 
+                            'container_class' => 'footer-links',
+                            'theme_location'  => 'footer_menu'
+                        ] );
+                    ?>
                 </p>
-                <p class="footer-company-name">All Rights Reserved. © 2018 <a href="#">Kozak</a> Design By : <a href="">Alexandr Yushkevych</a></p>
+                <p class="footer-company-name">All Rights Reserved. <a href="#">Kozak</a> Design By : <a href="">Alexandr Yushkevych</a></p>
             </div>
 
             <div class="footer-right">
@@ -19,6 +19,7 @@
                     <i class="fa fa-envelope-o"></i>
                 </form>
             </div>
+
         </div>
     </div><!-- end container -->
 </footer>
